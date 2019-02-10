@@ -1,0 +1,76 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.cruxlab.parkurbn"
+        minSdkVersion 21
+        targetSdkVersion 25
+        versionCode Integer.parseInt(project.VERSION_CODE)
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    signingConfigs {
+        release {
+            storeFile file("parkurbn-cruxlab.jks")
+            storePassword "P4rkUrbn"
+            keyAlias "parkurbn"
+            keyPassword "P4rkUrbn"
+        }
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+        }
+    }
+}
+
+configurations.all {
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        def requested = details.requested
+        if (requested.group == 'com.android.support') {
+            if (!requested.name.startsWith("multidex")) {
+                details.useVersion '25.3.1'
+            }
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile project(':floatingsearchview-master')
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.google.android.gms:play-services-maps:10.2.0'
+    compile 'com.google.android.gms:play-services-places:10.2.0'
+    compile 'com.google.android.gms:play-services-wallet:10.2.0'
+    compile 'com.google.android.gms:play-services-location:10.2.0'
+    compile 'com.google.maps:google-maps-services:0.1.17'
+    compile 'com.google.code.gson:gson:2.6.2'
+    compile 'com.jakewharton:butterknife:8.5.1'
+    compile 'net.hockeyapp.android:HockeySDK:4.0.0'
+    compile 'com.braintreepayments.api:drop-in:3.0.7'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.facebook.android:facebook-android-sdk:[4,5)'
+    compile 'me.relex:circleindicator:1.2.2@aar'
+    compile 'uk.co.chrisjenx:calligraphy:2.2.0'
+    testCompile 'junit:junit:4.12'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    compile 'com.iarcuschin:simpleratingbar:0.1.5'
+    compile 'com.github.bumptech.glide:glide:3.8.0'
+
+    compile "android.arch.persistence.room:runtime:1.0.0-alpha3"
+    annotationProcessor "android.arch.persistence.room:compiler:1.0.0-alpha3"
+
+    compile 'tech.gusavila92:java-android-websocket-client:1.1.2'
+    compile project(path: ':wheelview')
+}
+
+apply plugin: 'com.google.gms.google-services'

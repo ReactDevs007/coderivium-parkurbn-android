@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cruxlab.parkurbn.activities.StateListActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_app_bar"
+        style="@style/AppBar">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/AppBarButton"
+            android:layout_alignParentStart="true"
+            android:text="@string/cancel" />
+
+        <TextView
+            style="@style/AppBarTitle"
+            android:text="@string/state" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_states"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

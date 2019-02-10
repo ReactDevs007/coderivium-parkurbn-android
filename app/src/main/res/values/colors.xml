@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_app_bar">#f3f3f3</color>
+    <color name="color_orange">#ff7E00</color>
+    <color name="color_orange_light">#ffcc98</color>
+    <color name="color_blue">#3675db</color>
+    <color name="color_dark_gray">#aaafb7</color>
+    <color name="color_gray">#c9cdd5</color>
+    <color name="color_fb">#3a599d</color>
+    <color name="color_dark">#2f2f2f</color>
+    <color name="color_red">#fe3824</color>
+    <color name="color_segment_red">#d91717</color>
+    <color name="color_segment_yellow">#ffcb14</color>
+    <color name="color_segment_green">#06ac46</color>
+    <color name="color_green">#63c848</color>
+</resources>

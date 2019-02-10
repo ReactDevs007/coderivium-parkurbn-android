@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_app_bar"
+        style="@style/AppBar">
+
+        <ImageButton style="@style/AppBarBackButton" />
+
+        <TextView
+            style="@style/AppBarTitle"
+            android:text="@string/my_account" />
+
+        <Button
+            android:id="@+id/btn_save"
+            style="@style/AppBarButton"
+            android:layout_alignParentEnd="true"
+            android:text="@string/save" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_email_fields"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/et_email"
+            style="@style/AppTextInputLayout"
+            android:layout_marginTop="16dp">
+
+            <EditText
+                style="@style/AppEditText"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/change_password"
+            android:textAllCaps="true" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/et_old_password"
+            style="@style/AppTextInputLayout"
+            android:layout_marginTop="8dp"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                style="@style/AppEditText"
+                android:hint="@string/current_password"
+                android:inputType="textPassword" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/et_new_password"
+            style="@style/AppTextInputLayout"
+            android:layout_marginTop="8dp"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                style="@style/AppEditText"
+                android:hint="@string/new_password"
+                android:inputType="textPassword" />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_logged_in_via_fb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:visibility="gone" />
+
+    <Switch
+        android:id="@+id/sw_send_receipts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/send_me_parking_receipts"
+        android:textSize="@dimen/txt_large" />
+
+</LinearLayout>

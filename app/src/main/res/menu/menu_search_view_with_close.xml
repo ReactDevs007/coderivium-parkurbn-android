@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <item
+        android:id="@+id/action_close"
+        android:icon="@drawable/ic_clear"
+        android:orderInCategory="1"
+        android:title="@string/action_voice_rec"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_voice_rec"
+        android:icon="@drawable/ic_mic_black"
+        android:orderInCategory="2"
+        android:title="@string/action_voice_rec"
+        app:showAsAction="ifRoom" />
+</menu>

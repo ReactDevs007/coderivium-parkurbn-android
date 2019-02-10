@@ -1,0 +1,176 @@
+<resources>
+
+    <string name="app_name">Urbn</string>
+
+    <!-- Tutorial -->
+
+    <string name="tutorial">Tutorial</string>
+    <string name="skip">Skip</string>
+    <string name="disabled_spots">Disabled spots</string>
+    <string name="demo_tutorial_spots">Description for this option, some text about disabled spots in ParkUrbn application.</string>
+    <string name="demo_tutorial_sample">It\'s simple text sample.</string>
+    <string name="show_disabled_spots">Show disabled spots</string>
+
+    <!-- Sign up/in -->
+
+    <string name="sign_up">Sign Up</string>
+    <string name="already_have_an_account_sign_in">Already have an account? Sign in.</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="or">or</string>
+    <string name="sign_in_with_facebook">Sign In with Facebook</string>
+    <string name="by_signing_up_i_agree_to_the_parkurban">By signing up, I agree to the ParkUrban</string>
+    <string name="terms_of_service_and_privacy_policy">Terms of Service and Privacy Policy</string>
+    <string name="sign_in">Sign In</string>
+    <string name="oops_i_forgot_my_password">Oops, I forgot my password</string>
+    <string name="remind_password">Remind Password</string>
+    <string name="receive_reset_password_link_text">Enter your email address to receive reset password link</string>
+    <string name="submit">Submit</string>
+
+    <!-- Menu -->
+
+    <string name="my_account">My account</string>
+    <string name="vehicles">Vehicles</string>
+    <string name="parking_history">Parking history</string>
+    <string name="feedback">Feedback</string>
+    <string name="log_out">Log out</string>
+
+    <string name="manhattan_beach">Manhattan Beach</string>
+    <string name="berkeley">Berkeley</string>
+    <string name="seattle">Seattle</string>
+    <string name="santa_monica">Santa Monica</string>
+
+    <string name="navigation_drawer_open">Drawer open</string>
+    <string name="navigation_drawer_close">Drawer close</string>
+
+    <!-- My account -->
+
+    <string name="you_logged_in_as_via_fb">You logged in as %1$s %2$s via Facebook account</string>
+    <string name="you_logged_in_via_fb">You logged in via Facebook account</string>
+    <string name="change_password">Change password</string>
+    <string name="current_password">Current password</string>
+    <string name="new_password">New password</string>
+    <string name="send_me_parking_receipts">Send me parking receipts</string>
+
+    <!-- Vehicles -->
+
+    <string name="no_vehicles_text">You don\'t have any vehicles on your account. Please, add one or more vehicles to use the payment feature of the app.</string>
+    <string name="add_vehicle">Add vehicle</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="create_first_vehicle_text">You need to add at least one vehicle to be able to pay for the parking place.</string>
+    <string name="vehicle_title">Vehicle title (optional)</string>
+    <string name="license_plate_number">License plate number</string>
+    <string name="state">State</string>
+    <string name="select">Select</string>
+    <string name="set_as_default">Set as default</string>
+    <string name="first_default_vehicle_text">This is your first vehicle and it will be used as default vehicle</string>
+    <string name="vehicle_modify_text">You can modify this information later from the Settings screen or when making a payment.</string>
+    <string name="current_vehicles">Current vehicles</string>
+    <string name="new_vehicle">New vehicle</string>
+    <string name="add">Add</string>
+    <string name="edit">Edit</string>
+    <string name="edit_vehicle">Edit vehicle</string>
+    <string name="remove_this_vehicle">Remove this vehicle</string>
+
+    <!-- Parking history -->
+
+    <string name="there_is_no_parking_history_yet">There is no parking history yet.</string>
+
+    <!-- Feedback -->
+
+    <string name="where_would_you_like_to_see_urbn_next">Where would you like to see\nUrbn next?</string>
+    <string name="neighborhood">Neighborhood</string>
+    <string name="city">City</string>
+    <string name="rate_this_app">Rate this app</string>
+    <string name="we_want_to_hear_from_you">We want to hear from you!</string>
+
+    <!-- Search -->
+
+    <string name="search_here">Search here</string>
+    <string name="action_voice_rec">action voice rec</string>
+
+    <!-- Filter -->
+
+    <string name="min_time">10m</string>
+    <string name="max_time">8h</string>
+    <string name="start_time">0h 10m</string>
+    <string name="filter_text">Please, set the minimum duration for which you would like to park.</string>
+
+    <!-- Overlays -->
+
+    <string name="pay">Pay</string>
+    <string name="navigate">Navigate</string>
+    <string name="arrived">Arrived</string>
+    <string name="confirm">Confirm</string>
+    <string name="available_parking_spots">Available parking spots</string>
+    <string name="move_pin">"Urbn is not available in the area selected. Please, move pin.</string>
+    <string name="free_spot_cnt_0">0</string>
+
+    <!-- Order -->
+
+    <string name="order">Order</string>
+    <string name="price">Price</string>
+    <string name="free">Free</string>
+    <string name="vehicle">Vehicle</string>
+    <string name="select_your_vehicle">Select your vehicle</string>
+    <string name="parking_time">Parking time</string>
+    <string name="total_price">Total price</string>
+    <string name="ends_at">Ends at %1$s</string>
+    <string name="hours">hours</string>
+    <string name="min">min</string>
+    <string name="done">Done</string>
+    <string name="next">Next</string>
+
+    <!-- Parking info -->
+
+    <string name="parking_time_remaining">Parking Time Remaining</string>
+    <string name="add_time_refill">Add time/refill</string>
+    <string name="remind_me_before">Remind me before</string>
+    <string name="show_car_on_map">Show car on map</string>
+    <string name="leave_parking">Leave parking</string>
+    <string name="refill_set_time_text">Please, set the time that you want to add to current parking time.</string>
+    <string name="parking_spot_ends_at">Parking spot ends at %1$s</string>
+    <string name="unavailable">Unavailable</string>
+    <string name="time_has_expired_please_refill">Your parking time has expired. Please, refill.</string>
+    <string name="time_expires_soon">Your parking time is expiring soon.</string>
+    <string name="time_expired_at">Time expired at %1$s</string>
+    <string name="time_00_00_00">00:00:00</string>
+    <string name="time_00_00">00:00</string>
+    <string name="refill">Refill</string>
+
+    <!-- Validation -->
+
+    <string name="email_error">Please enter a valid email address, e.g. john@domain.com</string>
+    <string name="password_error">Use password with six or more characters</string>
+    <string name="plate_error">Fill the field with four or more characters</string>
+    <string name="nickname_error">The field can\'t be empty</string>
+    <string name="length_error">The field value is too long</string>
+
+    <!-- Dialogs & toasts -->
+
+    <string name="loading">Loading</string>
+    <string name="unable_to_determine_your_current_location">Unable to determine your current location</string>
+    <string name="determining_your_location">Determining your location</string>
+    <string name="no_internet">The Internet connection unavailable</string>
+    <string name="there_are_no_spots_around">Sorry, there are no free spots around</string>
+    <string name="the_spot_is_taken">Sorry, the spot is taken</string>
+    <string name="there_are_no_free_spots">Sorry, there are no free spots</string>
+    <string name="find_another">Find another</string>
+    <string name="spot_no_longer_satisfy_filter">Sorry, selected spot no longer satisfy filter</string>
+    <string name="segment_no_longer_satisfy_filter">Sorry, selected segment no longer satisfy filter</string>
+    <string name="spot_is_unavailable">Sorry, selected spot is unavailable</string>
+    <string name="segment_is_unavailable">Sorry, selected segment is unavailable</string>
+    <string name="select_vehicle_and_time">Please, select your vehicle and parking time</string>
+    <string name="are_you_sure_you_want_to_delete_vehicle">Are you sure you want to delete this vehicle?</string>
+    <string name="do_you_want_to_leave_this_parking_spot">Do you really want to leave this parking spot?</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+    <string name="no_route_to_spot">There is no route to the selected spot from your current location</string>
+    <string name="no_route_to_segment">There is no route to the selected segment from your current location</string>
+    <string name="select_state">Please, select your state</string>
+    <string name="click_to_refill">Your parking meter expires soon. Click to refill</string>
+    <string name="parking_meter_expires_soon">Your parking meter expires soon</string>
+
+</resources>

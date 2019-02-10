@@ -1,0 +1,190 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/color_gray</item>
+        <item name="colorPrimaryDark">@color/dark_gray</item>
+        <item name="colorAccent">@color/color_orange</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/bg_start</item>
+    </style>
+
+    <!-- Login screen -->
+
+    <style name="AppEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lines">1</item>
+        <item name="android:colorControlNormal">@color/color_orange</item>
+        <item name="android:layout_marginStart">0dp</item>
+        <item name="android:layout_marginEnd">0dp</item>
+    </style>
+
+    <style name="AppTextInputLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+    </style>
+
+    <style name="LoginTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#AAAFB7</item>
+    </style>
+
+    <style name="LoginButton" parent="AppButton">
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+    </style>
+
+    <style name="FbLoginButton" parent="AppButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/color_fb</item>
+        <item name="android:background">@null</item>
+        <item name="android:drawableLeft">@drawable/ic_fb_logo</item>
+        <item name="android:drawablePadding">16dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="MenuItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">12dp</item>
+        <item name="android:textSize">@dimen/menu_item_text_size</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+    <style name="OverlayButton">
+        <item name="android:layout_width">@dimen/overlay_btn_size</item>
+        <item name="android:layout_height">@dimen/overlay_btn_size</item>
+        <item name="android:background">@drawable/bg_white_circle</item>
+        <item name="android:elevation">@dimen/overlay_elevation</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <!-- AppBar -->
+
+    <style name="AppBar">
+        <item name="android:id">@id/rl_app_bar</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/app_bar_height</item>
+        <item name="android:elevation">@dimen/app_bar_elevation</item>
+        <item name="android:background">@color/color_app_bar</item>
+    </style>
+
+    <style name="AppBarBackButton">
+        <item name="android:id">@id/ibtn_nav_btn</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_margin">@dimen/overlay_btn_margin</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:elevation">@dimen/overlay_elevation</item>
+        <item name="android:src">@drawable/ic_arrow_back_orange</item>
+    </style>
+
+    <style name="AppBarTitle">
+        <item name="android:id">@id/tv_nav_title</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    '
+
+    <style name="AppBarButton">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:minWidth">30dp</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/color_orange</item>
+        <item name="android:textSize">@dimen/txt_medium</item>
+    </style>
+
+    <!-- ArrowLayout -->
+
+    <style name="ArrowLayoutUnderlined">
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:background">@drawable/ripple_white_to_orange_underlined</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ArrowLayout">
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:background">@drawable/ripple_white_to_orange</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@android:color/darker_gray</item>
+    </style>
+
+    <style name="DialogButton">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/color_orange</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="AppButton">
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@color/color_orange</item>
+        <item name="android:textSize">@dimen/txt_large</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">@drawable/bg_app_button</item>
+        <item name="android:elevation">2dp</item>
+    </style>
+
+    <style name="OverlayAppButton" parent="AppButton">
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+    </style>
+
+    <style name="AppButtonThink" parent="Base.Widget.AppCompat.Button.Borderless">
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">@dimen/txt_small</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+</resources>

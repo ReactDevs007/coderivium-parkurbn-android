@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <ImageButton
+        android:id="@+id/ibtn_compass"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="18dp"
+        android:background="@drawable/bg_white_circle"
+        android:elevation="@dimen/overlay_elevation"
+        app:srcCompat="@drawable/ic_compass_arrow" />
+
+    <LinearLayout
+        android:id="@+id/ll_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:elevation="@dimen/overlay_elevation"
+        android:padding="15dp"
+        android:text="@string/arrived"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="16sp">
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:textColor="@android:color/black" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_arrow_right" />
+
+    </LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/ibtn_my_location"
+        style="@style/OverlayButton"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/pb_time_left"
+        android:layout_marginEnd="@dimen/overlay_btn_margin"
+        android:layout_marginBottom="@dimen/overlay_btn_margin"
+        android:src="@drawable/ic_my_location" />
+
+    <ProgressBar
+        android:id="@+id/pb_time_left"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_address"
+        android:indeterminateTint="@color/color_gray"
+        android:maxHeight="8dp"
+        android:minHeight="8dp"
+        android:layout_marginBottom="-3dp"
+        android:scaleY="3"
+        tools:progress="0" />
+
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<RelativeLayout
+    style="@style/ArrowLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/tv_state_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="@string/state"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/txt_large" />
+
+    <TextView
+        android:id="@+id/tv_state_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:drawableEnd="@drawable/ic_arrow_right"
+        android:drawablePadding="10dp"
+        android:text="@string/state"
+        android:textColor="@color/color_dark_gray"
+        android:textSize="@dimen/txt_large" />
+
+</RelativeLayout>

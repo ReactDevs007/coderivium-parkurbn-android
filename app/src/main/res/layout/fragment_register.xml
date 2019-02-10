@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.cruxlab.parkurbn.fragments.RegisterFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout style="@style/AppBar">
+
+            <ImageButton style="@style/AppBarBackButton" />
+
+            <TextView
+                style="@style/AppBarTitle"
+                android:text="@string/sign_up" />
+
+        </RelativeLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/et_email"
+            style="@style/AppTextInputLayout"
+            android:layout_marginTop="16dp">
+
+            <EditText
+                style="@style/AppEditText"
+                android:hint="@string/email"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:nextFocusDown="@+id/et_password" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/et_password"
+            style="@style/AppTextInputLayout"
+            android:layout_marginTop="8dp"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                style="@style/AppEditText"
+                android:hint="@string/password"
+                android:imeActionLabel="actionGo"
+                android:imeOptions="actionGo"
+                android:inputType="textPassword" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_register"
+            style="@style/LoginButton"
+            android:layout_marginTop="16dp"
+            android:text="@string/sign_up" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="8dp"
+            android:text="@string/or"
+            android:textAllCaps="true"
+            android:textColor="#AAAFB7"
+            android:textSize="13sp" />
+
+        <FrameLayout
+            android:id="@+id/fl_login_with_fb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/bg_fb_login_button"
+            android:elevation="2dp">
+
+            <TextView
+                style="@style/FbLoginButton"
+                android:layout_marginTop="0dp"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="@string/sign_in_with_facebook" />
+        </FrameLayout>
+
+        <TextView
+            style="@style/LoginTitle"
+            android:text="@string/by_signing_up_i_agree_to_the_parkurban"
+            android:textAlignment="center" />
+
+        <TextView
+            style="@style/LoginTitle"
+            android:paddingBottom="16dp"
+            android:paddingTop="4dp"
+            android:text="@string/terms_of_service_and_privacy_policy"
+            android:textAlignment="center"
+            android:textColor="@color/color_orange" />
+
+    </LinearLayout>
+</ScrollView>

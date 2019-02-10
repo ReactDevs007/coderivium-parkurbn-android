@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "395292148468",
+    "firebase_url": "https://parkurbn-182df.firebaseio.com",
+    "project_id": "parkurbn-182df",
+    "storage_bucket": "parkurbn-182df.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:395292148468:android:45523ba669b3fd43",
+        "android_client_info": {
+          "package_name": "com.cruxlab.parkurbn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "395292148468-5qgf3bjdei1b4nbedsdt8lnb7opk2c6e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsaQdVqNsSo8NGHUUjfGPoKmIyLLOHxHI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

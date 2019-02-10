@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.cruxlab.parkurbn.fragments.LoginFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout style="@style/AppBar">
+
+            <ImageButton style="@style/AppBarBackButton" />
+
+            <TextView
+                style="@style/AppBarTitle"
+                android:text="@string/sign_in" />
+
+        </RelativeLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/et_email"
+            style="@style/AppTextInputLayout"
+            android:layout_marginTop="16dp">
+
+            <EditText
+                style="@style/AppEditText"
+                android:hint="@string/email"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:nextFocusDown="@+id/et_password"
+                android:textAllCaps="true" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/et_password"
+            style="@style/AppTextInputLayout"
+            android:layout_marginTop="8dp"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                style="@style/AppEditText"
+                android:hint="@string/password"
+                android:imeActionLabel="actionGo"
+                android:imeOptions="actionGo"
+                android:inputType="textPassword"
+                android:textAllCaps="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:minHeight="20dp"
+            android:padding="8dp"
+            android:text="@string/oops_i_forgot_my_password"
+            android:textAllCaps="false"
+            android:textColor="@color/color_orange"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/btn_login"
+            style="@style/LoginButton"
+            android:layout_marginTop="8dp"
+            android:text="@string/sign_in" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="8dp"
+            android:text="@string/or"
+            android:textAllCaps="true"
+            android:textColor="#AAAFB7"
+            android:textSize="13sp" />
+
+        <FrameLayout
+            android:id="@+id/fl_login_with_fb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/bg_fb_login_button"
+            android:elevation="2dp">
+
+            <TextView
+                android:id="@+id/btn_login_with_facebook"
+                style="@style/FbLoginButton"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="@string/sign_in_with_facebook" />
+        </FrameLayout>
+
+    </LinearLayout>
+</ScrollView>

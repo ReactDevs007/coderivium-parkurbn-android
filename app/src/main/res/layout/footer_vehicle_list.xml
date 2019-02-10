@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/add_vehicle"
+        android:textAllCaps="true" />
+
+    <RelativeLayout
+        android:id="@+id/ll_select_vehicle"
+        style="@style/ArrowLayout">
+
+        <ImageView
+            android:id="@+id/iv_vehicle_icon"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/ic_vehicle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/iv_vehicle_icon"
+            android:text="@string/new_vehicle"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/txt_large" />
+
+        <TextView
+            android:id="@+id/tv_add_vehicle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:drawableEnd="@drawable/ic_arrow_right"
+            android:drawablePadding="10dp"
+            android:text="@string/add"
+            android:textColor="@color/color_dark_gray"
+            android:textSize="@dimen/txt_large" />
+
+    </RelativeLayout>
+
+    <View
+        style="@style/Divider"
+        android:background="@color/color_gray" />
+
+</LinearLayout>

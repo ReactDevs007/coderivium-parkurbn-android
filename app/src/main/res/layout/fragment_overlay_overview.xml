@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:id="@+id/ll_filter"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="48dp"
+        android:background="#f0ffffff"
+        android:elevation="@dimen/overlay_elevation"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_cur_min_time"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/bg_orange_rounded"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/start_time"
+            android:textColor="@android:color/white" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|left"
+                android:paddingBottom="5dp"
+                android:text="@string/min_time" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:paddingBottom="5dp"
+                android:text="@string/max_time" />
+
+            <SeekBar
+                android:id="@+id/sb_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxHeight="4dp"
+                android:paddingBottom="35dp"
+                android:paddingEnd="0dp"
+                android:paddingStart="0dp"
+                android:paddingTop="35dp"
+                android:progress="0"
+                android:progressDrawable="@drawable/seekbar_progress"
+                android:progressTint="@color/color_orange"
+                android:splitTrack="false"
+                android:thumb="@drawable/seekbar_thumb"
+                android:thumbOffset="0dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/filter_text"
+                android:textSize="12sp"/>
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:elevation="@dimen/overlay_bottom_elevation"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_pay"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:stateListAnimator="@null"
+            android:text="@string/pay"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/txt_medium"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="60dp"
+            android:layout_height="match_parent" />
+
+        <ImageButton
+            android:id="@+id/ibtn_filter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:stateListAnimator="@null"
+            app:srcCompat="@drawable/ic_filter" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/ibtn_compass"
+        android:layout_width="@dimen/overlay_compass_size"
+        android:layout_height="@dimen/overlay_compass_size"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="75dp"
+        android:background="@drawable/bg_white_circle"
+        android:elevation="@dimen/overlay_bottom_elevation"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/ic_compass_arrow" />
+
+    <LinearLayout
+        android:id="@+id/ll_search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <com.arlib.floatingsearchview.FloatingSearchView
+            android:id="@+id/floating_search_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:addStatesFromChildren="false"
+            android:elevation="20dp"
+            android:padding="@dimen/overlay_btn_padding"
+            app:floatingSearch_close_search_on_keyboard_dismiss="true"
+            app:floatingSearch_leftActionMode="showHamburger"
+            app:floatingSearch_menu="@menu/menu_search_view"
+            app:floatingSearch_searchHint="@string/search_here"
+            app:floatingSearch_showSearchKey="false"
+            app:floatingSearch_searchSuggestionTextSize1="16sp"
+            app:floatingSearch_searchSuggestionTextSize2="12sp"
+            app:floatingSearch_suggestionsListAnimDuration="250" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/ibtn_quick_parking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="6dp"
+        android:background="@null"
+        android:elevation="15dp"
+        android:stateListAnimator="@null"
+        app:srcCompat="@drawable/ic_quick_parking" />
+
+    <RelativeLayout
+        android:id="@+id/rl_overlay_btns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ll_bottom"
+        android:clipToPadding="false"
+        android:paddingBottom="12dp">
+
+        <ImageButton
+            android:id="@+id/ibtn_my_location"
+            style="@style/OverlayButton"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/overlay_btn_margin"
+            android:layout_marginTop="@dimen/overlay_btn_margin"
+            android:src="@drawable/ic_my_location" />
+
+        <Button
+            android:id="@+id/btn_free_spot_cnt"
+            style="@style/OverlayButton"
+            android:layout_above="@id/ibtn_my_location"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/overlay_btn_margin"
+            android:textSize="@dimen/txt_large"
+            android:textStyle="bold"
+            android:text="@string/free_spot_cnt_0"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

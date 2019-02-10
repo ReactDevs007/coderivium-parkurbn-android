@@ -1,0 +1,33 @@
+<resources>
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">170dp</dimen>
+    <dimen name="activity_horizontal_margin">32dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="app_bar_height">56dp</dimen>
+    <dimen name="app_bar_elevation">4dp</dimen>
+
+    <!--OVERLAY FRAGMENTS-->
+
+    <dimen name="overlay_btn_margin">12dp</dimen>
+    <dimen name="overlay_elevation">6dp</dimen>
+    <dimen name="overlay_btn_size">48dp</dimen>
+    <dimen name="overlay_btn_padding">12dp</dimen>
+    <dimen name="overlay_big_padding">20dp</dimen>
+    <dimen name="overlay_small_padding">10dp</dimen>
+    <dimen name="overlay_list_size">130dp</dimen>
+    <dimen name="overlay_compass_size">36dp</dimen>
+    <dimen name="overlay_bottom_elevation">12dp</dimen>
+
+    <!--END OVERLAY FRAGMENTS-->
+    <!--TEXT SIZES-->
+
+    <dimen name="txt_large">18sp</dimen>
+    <dimen name="txt_medium">16sp</dimen>
+    <dimen name="txt_small">14sp</dimen>
+    <dimen name="txt_xsmall">12sp</dimen>
+
+    <!--END TEXT SIZES-->
+
+    <dimen name="menu_item_text_size">20sp</dimen>
+    <dimen name="menu_padding_start">30dp</dimen>
+</resources>

@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context=".activities.ParkingInfoActivity"
+    tools:ignore="MissingPrefix">
+
+    <RelativeLayout
+        android:id="@+id/rl_top_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_parking_info"
+        android:orientation="vertical">
+
+        <TextSwitcher
+            android:id="@+id/ts_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"/>
+
+        <View
+            android:id="@+id/v_timer_info_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ts_title"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/bg_timer"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ts_title"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4">
+
+                <TextView
+                    android:id="@+id/tv_time_remaining"
+                    fontPath="@string/font_DINProCond_Bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@android:color/black"
+                    android:textSize="72sp"
+                    tools:text="00:30:00"/>
+
+                <TextView
+                    android:id="@+id/tv_refill_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_time_remaining"
+                    android:layout_centerHorizontal="true"
+                    android:clickable="true"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/add_time_refill"
+                    android:textColor="@color/color_orange"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_info_text"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="14sp"
+                tools:text="00:30:00"
+                tools:textColor="@android:color/white"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_bottom_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_bottom_state_refill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <RelativeLayout
+                android:id="@+id/rl_spot_info2"
+                style="@style/ArrowLayoutUnderlined">
+
+                <ImageView
+                    android:id="@+id/iv_parking2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:tint="@color/color_dark"
+                    app:srcCompat="@drawable/ic_parking"/>
+
+                <TextView
+                    android:id="@+id/tv_ends_at_refill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="14dp"
+                    android:layout_toEndOf="@+id/iv_parking2"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/color_dark"
+                    android:textSize="14sp"
+                    tools:text="5222 Ends at 10:56 PM"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="48dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="@string/refill_set_time_text"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.wx.wheelview.widget.WheelView
+                    android:id="@+id/wv_hours"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <com.wx.wheelview.widget.WheelView
+                    android:id="@+id/wv_mins"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_cancel"
+                    style="@style/AppButtonThink"
+                    android:layout_weight="2"
+                    android:background="@drawable/bg_app_button_dark"
+                    android:text="@string/cancel"
+                    android:textColor="@color/color_dark"/>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"/>
+
+                <Button
+                    android:id="@+id/btn_pay"
+                    style="@style/AppButtonThink"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_app_button"
+                    android:text="@string/pay"
+                    android:textColor="@color/color_orange"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_bottom_state_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/rl_spot_info"
+                style="@style/ArrowLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_parking"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:tint="@color/color_dark"
+                    app:srcCompat="@drawable/ic_parking"/>
+
+                <TextView
+                    android:id="@+id/tv_ends_at_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="14dp"
+                    android:layout_toEndOf="@+id/iv_parking"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/color_dark"
+                    android:textSize="14sp"
+                    tools:text="5222 Ends at 10:56 PM"/>
+
+            </RelativeLayout>
+
+            <View
+                style="@style/Divider"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_remind"
+                style="@style/ArrowLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_time_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:tint="@color/color_dark"
+                    app:srcCompat="@drawable/ic_remind"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="14dp"
+                    android:layout_toEndOf="@id/iv_time_icon"
+                    android:text="@string/remind_me_before"
+                    android:textColor="@color/color_dark"
+                    android:textSize="@dimen/txt_small"/>
+
+                <TextView
+                    android:id="@+id/tv_remind_before_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:drawableEnd="@drawable/ic_arrow_right"
+                    android:drawablePadding="10dp"
+                    android:text="@string/select"
+                    android:textColor="@color/color_dark_gray"
+                    android:textSize="@dimen/txt_small"/>
+
+            </RelativeLayout>
+
+            <View
+                style="@style/Divider"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"/>
+
+            <Button
+                android:id="@+id/btn_show_car"
+                style="@style/AppButtonThink"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/bg_app_button"
+                android:text="@string/show_car_on_map"
+                android:textColor="@color/color_orange"/>
+
+            <Button
+                android:id="@+id/btn_leave"
+                style="@style/AppButtonThink"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/bg_app_button_dark"
+                android:text="@string/leave_parking"
+                android:textColor="@color/color_dark"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

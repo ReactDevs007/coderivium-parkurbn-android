@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/ibtn_back_btn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="@dimen/overlay_btn_margin"
+        android:background="@android:color/transparent"
+        android:elevation="@dimen/overlay_elevation"
+        app:srcCompat="@drawable/ic_arrow_back_black" />
+
+    <ImageButton
+        android:id="@+id/ibtn_compass"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="18dp"
+        android:background="@drawable/bg_white_circle"
+        android:elevation="@dimen/overlay_elevation"
+        app:srcCompat="@drawable/ic_compass_arrow" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_confirm_marker"
+                android:layout_width="50dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:paddingBottom="50dp"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/ic_confirm_pin" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:elevation="@dimen/overlay_elevation"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_destination" />
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/move_pin"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/txt_medium" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_confirm"
+                style="@style/OverlayAppButton"
+                android:enabled="false"
+                android:text="@string/confirm"
+                android:textColor="@color/color_orange_light"
+                android:background="@drawable/bg_app_button_disabled"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
