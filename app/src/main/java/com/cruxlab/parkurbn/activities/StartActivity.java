@@ -59,7 +59,7 @@ public class StartActivity extends BaseActivity implements FacebookCallback<Logi
         LoginManager.getInstance().registerCallback(mCallbackManager, this);
         mParkUrbnApi = ParkUrbnApplication.get().getParkUrbnApi();
         setContentFragment(StartFragment.newInstance());
-        checkForUpdates();
+        //checkForUpdates();
     }
 
     @Override

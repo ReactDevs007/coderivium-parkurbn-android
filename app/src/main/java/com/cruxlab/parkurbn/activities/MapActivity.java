@@ -262,7 +262,7 @@ public class MapActivity extends BaseActivity implements OnMapReadyCallback, Inf
         } else if (capturedSpot != null || capturedSegment != null) {
             setOverlayFragment(OverlayCapturedFragment.newInstance(), false);
         } else {
-            showLoader();
+            //showLoader();
             setOverlayFragment(OverlayOverviewFragment.newInstance(), false);
         }
     }

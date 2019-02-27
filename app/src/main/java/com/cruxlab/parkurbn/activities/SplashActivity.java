@@ -15,7 +15,9 @@ public class SplashActivity extends AppCompatActivity {
         if (SharedPrefsManager.get().isUserLoggedIn()) {
             startActivity(new Intent(SplashActivity.this, MapActivity.class));
         } else {
+            //startActivity(new Intent(SplashActivity.this, MapActivity.class));
             startActivity(new Intent(SplashActivity.this, StartActivity.class));
+            //startActivity(new Intent(this, TutorialActivity.class));
         }
         finish();
     }
